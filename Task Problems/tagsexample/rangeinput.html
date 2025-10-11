@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Range in HTML</title>
+    <style>
+        .container {
+            margin: 20% auto;
+            display: block;
+            max-width: 600px;
+            border: 2px solid black;
+            text-align: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        .value-display {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h5>Range input between (20 and 100)</h5>
+
+        <!-- write your code here. -->
+        <input type="range" min="20" max="100" id="rangeInput">
+
+        <div class="value-display" id="valueDisplay">Value: 20</div>
+    </div>
+
+    <!-- JavaScript to handle the range input and display the value -->
+    <script>
+        const rangeInput = document.getElementById('rangeInput');
+        const valueDisplay = document.getElementById('valueDisplay');
+
+        // Update the display when the input value changes
+        rangeInput.addEventListener('input', () => {
+            valueDisplay.textContent = `Value: ${rangeInput.value}`;
+        });
+    </script>
+</body>
+</html>
