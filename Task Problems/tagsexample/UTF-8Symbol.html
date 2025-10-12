@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTF-8 symbol in html, Styled 100 Rupees Note</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .currency {
+            width: 350px;
+            height: 180px;
+            background: linear-gradient(135deg, #4caf50, #81c784);
+            border: 3px solid #388e3c;
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+            overflow: hidden;
+        }
+
+        .currency .amount {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .currency .symbol {
+            font-size: 50px;
+            color: #ffffff;
+            margin-right: 10px;
+        }
+
+        .currency .watermark {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px dashed rgba(255, 255, 255, 0.6);
+            margin-left: 10px;
+        }
+
+        .currency .serial {
+            font-size: 12px;
+            color: white;
+            text-align: right;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .currency .serial span {
+            display: block;
+        }
+
+        .currency::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: repeating-linear-gradient(45deg,
+                    rgba(255, 255, 255, 0.3),
+                    rgba(255, 255, 255, 0.3) 10px,
+                    rgba(255, 255, 255, 0.1) 10px,
+                    rgba(255, 255, 255, 0.1) 20px);
+            z-index: 1;
+        }
+
+        .currency::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: repeating-linear-gradient(-45deg,
+                    rgba(255, 255, 255, 0.3),
+                    rgba(255, 255, 255, 0.3) 10px,
+                    rgba(255, 255, 255, 0.1) 10px,
+                    rgba(255, 255, 255, 0.1) 20px);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="currency">
+        <div class="serial">
+            <span>Serial No:</span>
+            <span>AB12345678</span>
+        </div>
+        <div class="amount">
+            <span class="symbol">&#8377;</span>
+            100
+        </div>
+    </div>
+</body>
+
+</html>
