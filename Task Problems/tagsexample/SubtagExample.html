@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub Tag Example</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100dvw;
+            height: 100dvh;
+        }
+
+        header {
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 30px;
+            text-align: center;
+            text-decoration: underline solid gray;
+        }
+
+        .container {
+            border: 1px solid gray;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 30px 15px;
+            min-width: 300px;
+            width: 720px;
+            margin: 0 auto;
+        }
+
+
+        .highlight {
+            background: rgb(199, 199, 199);
+            color: rgb(87, 87, 87);
+        }
+
+        .exampleContainer {
+            padding: 20px 10px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            text-transform: capitalize;
+        }
+
+        .answer {
+            padding: 15px 7px;
+            background: whitesmoke;
+            color: rgb(58, 58, 58);
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">sub Html Element</h1>
+    </header>
+    <main>
+        <div class="container">
+
+            <p class="definition">
+                The <span class="highlight"> &lt;sub&gt; </span> tag defines subscript text. Subscript text appears half
+                a character below the normal line, and is sometimes rendered in a smaller font.
+            </p>
+            <div class="exampleContainer">
+                <p class="subtitle">Write the Balanced Chemical Equation for the formation of water.</p>
+                <p class="answer">
+                    O<sub>2</sub>+2H<sub>2</sub>O--> 2H<sub>2</sub>O
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
