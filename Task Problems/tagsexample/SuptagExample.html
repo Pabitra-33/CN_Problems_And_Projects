@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sup Tag</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100dvw;
+            height: 100dvh;
+            align-items: center;
+        }
+
+        .container-two {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 30px 15px;
+            min-width: 300px;
+            width: 720px;
+            margin: 0 auto;
+            background-color: black;
+        }
+
+        .container-two .title {
+            font-size: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .exampletask {
+            padding: 20px 10px;
+            color: white;
+            font-size: 1.2rem;
+            text-transform: capitalize;
+        }
+
+        .concept-practice {
+            padding: 20px 10px;
+        }
+
+        .solution {
+            margin-top: 20px;
+            padding: 15px 7px;
+        }
+        .answer {
+            font-size: 1.2rem;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .html-code {
+            background: rgb(230, 230, 230);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-two">
+        <div class="concept-practice">
+            <h2 class="title">
+                Convert the following sentence into mathematical expression using &lt;sup&gt; tag:
+            </h2>
+
+            <div class="exampletask">
+                <h4>Five To The Power Of Three plus Six To The Power of Four Equals One Thousand Four Hundred Twenty One
+            </h4>
+            </div>
+
+            <div class="solution">
+                <h2>
+                    <small class="answer">Your answer : </small>
+
+                    <span class="html-code"> 
+                        <!-- write your solution here. --> 
+                        <span class="base">5</span> <sup>3</sup>
+                        <span class="symbol">+</span> 
+                        <span class="base">6</span> <sup>4</sup> 
+                        <span class="symbol">=</span> 
+                        <span class="result">1421</span>
+                    </span>
+
+                </h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
