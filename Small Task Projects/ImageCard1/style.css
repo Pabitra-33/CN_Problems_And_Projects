@@ -1,0 +1,9 @@
+/* ----  external css styles  ------ */
+.imageCard {            
+    display:flex;            
+    justify-content:center;            
+    align-items:Center;            
+    overflow: hidden;            
+    text-align: center;            
+    margin: 20px auto;       
+}  
