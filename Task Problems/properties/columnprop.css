@@ -1,0 +1,18 @@
+.container{
+   
+    max-width: 500px;
+    padding : 16px;
+    line-height: 23px;
+    border : 3px dotted blue;
+    margin : 0 auto;
+    font-size : 16px;
+    color : white;
+    background-color: maroon;
+    columns: 3;
+    column-rule-style: solid;
+}
+
+h2{
+    text-align: right;
+    column-span: all;
+}
