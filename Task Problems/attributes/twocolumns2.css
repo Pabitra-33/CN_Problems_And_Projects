@@ -1,0 +1,39 @@
+/* write your code here */
+.container {
+    display: flex;
+    padding: 16px;
+    max-width: 450px;
+    border: 2px solid black;
+    margin: 48px auto;
+}
+
+.left,
+.right {
+    flex: 1;
+}
+
+h2,
+p {
+    text-align: center;
+    padding: 32px;
+}
+
+p {
+    border-left: 2px solid black;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+span {
+    display: block;
+    border: 2px solid black;
+    width: 128px;
+    margin-left: auto;
+    padding: 6px;
+    background-color: grey;
+    font-weight: bold;
+    color: white;
+}
