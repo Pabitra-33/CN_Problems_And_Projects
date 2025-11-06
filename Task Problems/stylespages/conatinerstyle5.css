@@ -15,6 +15,7 @@ body {
     transform: rotate(180deg);
 }
 
+/* Used the media queries for more efficient and responsive */
 @media (max-width: 768px) {
     body {
         background-color: yellow;
